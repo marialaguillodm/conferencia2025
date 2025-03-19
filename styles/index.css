@@ -2,9 +2,10 @@ body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     margin-left: auto;  /* Centra horizontalmente */
     margin-right: auto; /* Centra horizontalmente */
+    min-height: 100vh; /* Hace que el body ocupe toda la pantalla */
 }
 /* Diseño del encabezado, que repetiremos en todas las hojas */
 header{
@@ -15,17 +16,18 @@ header{
     position: fixed;
     top: 0;
     height: 100px;
-    width: 90%;
+    width: 100%;
     background-color: white;
 }
 header h1{
     font-size: 3vw;
 }
 #logo{
-    width: 7vw;
+    width: 90px;
     margin-bottom: 5px;
     margin-left: 20px;
     margin-top: 5px;
+    margin-right: 15px;
 }
 #inicio{
     background-color: beige;
@@ -41,15 +43,19 @@ nav>a{
     padding: 10px;
     text-decoration: none;
     color: black;
+    margin: 4px;
+    border-radius: 30%;
+    transition: background-color 0.3s ease-in-out, transform 0.5s ease-in-out 0.25s; 
 }
 .enlace:hover{
     background-color: rgb(204, 154, 250);
-    border-radius: 30%;
+    transform: scale(1.1);
     
 }
 /* fin del diseño de encabezado */
 div{
     margin-top: 100px;
+    flex: 1; 
 }
 section{
     margin-top: 40px;
@@ -60,9 +66,19 @@ section{
     align-items: center; /* Alinea los elementos verticalmente */
     gap: 20px; 
     padding: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
+#introduccion b{
+    background-color: rgb(230, 204, 253);
+}
+#introduccion i{
+    background-color: beige;
+}
+
 #introduccion img{
     width: 90%;
+    border-radius: 10%;
 }
 #ponentes{
     display: flex;
@@ -79,6 +95,22 @@ section{
     display: flex;
     width: 90%;
 }
+#ponentes a{
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+    font-size: 2vw;
+    background: linear-gradient(45deg, rgb(217, 183, 240), rgb(255, 241, 203));
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    border-radius: 20%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#ponentes a:hover{
+    transform: scale(1.2);
+
+}
 #datos{
     display: flex;
     align-items: center;
@@ -86,6 +118,12 @@ section{
 }
 #datos:hover a{
     display: block;
+}
+#datos a:hover{
+    display: block;
+    transform: scale(1.2); /* Hace que el elemento crezca un 10% */
+    transition: transform 0.5s ease;
+    transition-delay: 0.5s; /* Se ejecuta después del cambio de color */
 }
 #datos img{
     width: 100%;
@@ -101,6 +139,7 @@ section{
     text-decoration: none;
     color: black;
     font-weight: bold;
+    margin-top: 90px;
 }
 /* Diseño de pie de pagina que copiaremos en el resto de paginas css */
 footer{
