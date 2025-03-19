@@ -1,0 +1,65 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;  /* Centra horizontalmente */
+    margin-right: auto; /* Centra horizontalmente */
+}
+/* Diseño del encabezado, que repetiremos en todas las hojas */
+header{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(153, 16, 153) ;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 90%;
+    background-color: white;
+}
+header h1{
+    font-size: 2.5vw;
+}
+#logo{
+    width: 7vw;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+#agenda{
+    background-color: beige;
+    border-radius: 30%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    font-size: 1.5vw;
+}
+nav>a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.enlace:hover{
+    background-color: rgb(204, 154, 250);
+    border-radius: 30%;
+    
+}
+/* fin del diseño de encabezado */
+.agenda{
+    margin-top: 120px;
+
+}
+/* Diseño de pie de pagina que copiaremos en el resto de paginas css */
+footer{
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos dentro */
+    justify-content: space-around; /* Centra los elementos horizontalmente */
+    background-color: beige;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Asegura que el texto dentro esté centrado */
+}
