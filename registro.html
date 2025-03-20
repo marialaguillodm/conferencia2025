@@ -21,20 +21,104 @@
             <fieldset class="datos-personales beige">
                 <legend>Datos Personales</legend>
                 <label for="nombre">Nombre y Apellido:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <br><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" required>
+                <br>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br><br>
+                <input type="email" id="email" name="email" placeholder="juan.perez@email.com" required>
+                <br>
                 <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" minlength="6" required>
-                <br><br>
-                <label for="fecha">Fecha de Nacimiento:</label>
-                <input type="date" id="fecha" name="fecha" required>
+                <input type="password" id="password" name="password" minlength="6" placeholder="******" required>
+                <br>
+                <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" max="2007-03-20" required>
             </fieldset>    
             <fieldset class="info-contacto lila">
                 <legend>Información de Contacto</legend>
-            </fieldset>        
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono"  pattern="[0-9]{9}" placeholder="612345678" required>
+                <br>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" size="60" placeholder="Calle Mayor 123, Madrid" required>
+            </fieldset>
+            <fieldset class="preferencias-evento beige">
+                <legend>Preferencias del Evento</legend>
+                <label>
+                    País:
+                    <!-- Añadimos la selección de paises, he cogido paises de la unión 
+                     europea y lo he colocado en orden alfabetico para facilitar la busqueda-->
+                    <select name="pais" required>
+                        <option value="">Seleccione...</option>
+                        <option value="alemania">Alemania</option>
+                        <option value="austria">Austria</option>
+                        <option value="belgica">Bélgica</option>
+                        <option value="bulgaria">Bulgaria</option>
+                        <option value="chequia">Chequia</option>
+                        <option value="chipre">Chipre</option>
+                        <option value="croacia">Croacia</option>
+                        <option value="dinamarca">Dinamarca</option>
+                        <option value="eslovaquia">Eslovaquia</option>
+                        <option value="eslovenia">Eslovenia</option>
+                        <option value="españa">España</option>
+                        <option value="estonia">Estonia</option>
+                        <option value="francia">Finlandia</option>
+                        <option value="francia">Francia</option>
+                        <option value="grecia">Grecia</option>
+                        <option value="francia">Hungría</option>
+                        <option value="francia">Irlanda</option>
+                        <option value="francia">Italia</option>
+                        <option value="francia">Letonia</option>
+                        <option value="francia">Lituania</option>
+                        <option value="francia">Luxemburgo</option>
+                        <option value="francia">Malta</option>
+                        <option value="francia">Países Bajos</option>
+                        <option value="francia">Polonia</option>
+                        <option value="francia">Portugal</option>
+                        <option value="francia">Rumanía</option>
+                        <option value="francia">Suecia</option>
+                    </select>
+                </label>
+                <br>
+                <label class="talleres">
+                    <p>Talleres interactivos:</p>
+                    <div>
+                        <p><input type="checkbox" name="talleres" value="datos-web">Protegiendo tus datos en la web</p>
+                        <p><input type="checkbox" name="talleres" value="ra-educacion">Realidad aumentada en la educación</p>
+                        <p><input type="checkbox" name="talleres" value="auto-sost">Automatización y sostenibilidad</p>
+                        <p><input type="checkbox" name="talleres" value="auto-sost">Hackers éticos: aliados inesperados</p>
+                    </div>
+               </label>
+                <label class="entrada">
+                    <p class="entrada-titulo">Tipo de entrada:</p>
+                    <div>
+                        <p><input type="radio" name="entrada" value="mañana" required>Mañana</p>
+                        <p><input type="radio" name="entrada" value="tarde" required>Tarde</p>
+                        <p><input type="radio" name="entrada" value="completa" required>Completa</p>
+                    </div>
+                </label>
+            </fieldset>
+            <fieldset class="cv lila">
+                <legend>Subir CV</legend>
+                <label>
+                    <input type="file" id="cv" name="cv" accept=".pdf">
+                </label>
+            </fieldset>
+            <fieldset class="comentario beige">
+                <legend>Comentarios adicionales</legend>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="60" placeholder="Escribe aquí tus comentarios o preguntas..."></textarea>
+            </fieldset>
+            <fieldset class="pago lila">
+                <legend>Información de Pago</legend>
+                <label for="num-tarjeta">Número de la tarjeta:</label>
+                <input type="text" id="num-tarjeta"  pattern="[0-9]{16}" placeholder="XXXXXXXXXXXXXXXX" required>
+                <br>
+                <label for="fecha-expiracion">Fecha de Expiración:</label>
+                <input type="month" id="fecha-expiracion" name="fecha-expiracion" min="2025-03" required>
+            </fieldset>
+            <fieldset class="botones">
+                <input class="beige" id="borrar" type="reset" value="Borrar datos del formulario">
+                <input class="lila" id="Enviar" type="submit" value="Enviar">
+            </fieldset>
         </form>
         <a href="agenda.html">VER AGENDA</a>
     </div>

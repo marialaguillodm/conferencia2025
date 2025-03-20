@@ -102,7 +102,6 @@ footer{
     justify-content: space-around; /* Centra los elementos horizontalmente */
     background-color: beige;
     margin-top: 20px;
-    width: 100%;
     padding: 10px; /* Espaciado interno */
     text-align: center; /* Asegura que el texto dentro esté centrado */
 }

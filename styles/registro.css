@@ -88,23 +88,71 @@ form{
     width: 95%;
 }
 fieldset{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
     border-radius: 20px;
     border: none;
     margin: 20px;
 }
 .beige>legend{
-    border-radius: 10px;
     background-color: beige
 }
 .lila>legend{
-    border-radius: 10px;
     background-color: rgb(236, 199, 236);
 }
 legend{
+    border-radius: 10px;
     font-weight: bolder;
     padding: 5px;
     padding-left: 15px;
     padding-right: 15px;
+}
+input{
+    margin-bottom: 20px;
+}
+select{
+    margin-bottom: 10px;
+}
+.talleres div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0px;
+    margin-bottom: 5px
+}
+.talleres p{
+    margin-bottom: 0px;
+}
+.entrada div{
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.entrada-titulo{
+    margin-top: 20px;
+}
+.entrada div>p{
+    margin-top: 0px;
+    padding-left: 20px;;
+}
+.cv>input{
+    margin-bottom: 20px;
+}
+.comentario>textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.botones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: none;
+}
+.botones input{
+    font-size: 20px;
+    border-radius: 20%;
+    border:none;
+    padding: 20px;
 }
 /* Diseño de pie de pagina que copiaremos en el resto de paginas css */
 footer{
@@ -113,7 +161,6 @@ footer{
     justify-content: space-around; /* Centra los elementos horizontalmente */
     background-color: beige;
     margin-top: 20px;
-    width: 100%;
     padding: 10px; /* Espaciado interno */
     text-align: center; /* Asegura que el texto dentro esté centrado */
 }
