@@ -53,15 +53,6 @@ nav>a{
     
 }
 /* Fin del diseño de encabezado */
-.agenda h1{
-    background-color: beige;
-    padding: 20px;
-    border-radius: 20px;
-    border: 6px solid  rgb(236, 199, 236);
-    margin-bottom: 0px;
-    font-family: "Saira Condensed", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 500;
-}
 .agenda{
     margin-top: 100px;
     display: flex;
