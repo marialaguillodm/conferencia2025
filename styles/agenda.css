@@ -52,7 +52,16 @@ nav>a{
     transform: scale(1.1);
     
 }
-/* fin del diseño de encabezado */
+/* Fin del diseño de encabezado */
+.agenda h1{
+    background-color: beige;
+    padding: 20px;
+    border-radius: 20px;
+    border: 6px solid  rgb(236, 199, 236);
+    margin-bottom: 0px;
+    font-family: "Saira Condensed", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
 .agenda{
     margin-top: 100px;
     display: flex;
@@ -60,9 +69,6 @@ nav>a{
     align-items: center;
     flex-direction: column;
     flex: 1;
-}
-.general{
-    background-color: beige;
 }
 /* Diseño de la tabla */
 table{
@@ -79,13 +85,18 @@ th, td{
 th{
     background-color: rgb(236, 199, 236);
 }
+.beige{
+    background-color: beige;
+}
+/* Fin del diseño de la tabla */
+/* Diseño del botón con enlace */
 .agenda a{
     padding: 10px;
     width: 20%;
     text-align: center;
     font-size: 2vw;
     background: linear-gradient(45deg, rgb(217, 183, 240), rgb(255, 241, 203));
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 20%;
     text-decoration: none;
     color: black;
@@ -95,13 +106,14 @@ th{
     transform: scale(1.2);
 
 }
+/* Fin del diseño de botón con enlace */
 /* Diseño de pie de pagina que copiaremos en el resto de paginas css */
 footer{
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos dentro */
-    justify-content: space-around; /* Centra los elementos horizontalmente */
+    align-items: center;
+    justify-content: space-around;
     background-color: beige;
     margin-top: 20px;
-    padding: 10px; /* Espaciado interno */
-    text-align: center; /* Asegura que el texto dentro esté centrado */
+    padding: 10px;
+    text-align: center;
 }

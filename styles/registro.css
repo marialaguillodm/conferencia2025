@@ -3,9 +3,9 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-left: auto;  /* Centra horizontalmente */
-    margin-right: auto; /* Centra horizontalmente */
-    min-height: 100vh; /* Hace que el body ocupe toda la pantalla */
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
 }
 /* Diseño del encabezado, que repetiremos en todas las hojas */
 header{
@@ -20,7 +20,7 @@ header{
     background-color: white;
 }
 header h1{
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 #logo{
     width: 90px;
@@ -52,7 +52,8 @@ nav>a{
     transform: scale(1.1);
     
 }
-/* fin del diseño de encabezado */
+/* Fin del diseño de encabezado */
+/* Diseño del formulario */
 .formulario{
     margin-top: 80px;
     flex: 1; 
@@ -60,22 +61,6 @@ nav>a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-.formulario a{
-    padding: 10px;
-    width: 80%;
-    text-align: center;
-    font-size: 2vw;
-    background: linear-gradient(45deg, rgb(217, 183, 240), rgb(255, 241, 203));
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
-    border-radius: 20%;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-.formulario a:hover{
-    transform: scale(1.2);
-
 }
 .beige{
     background-color: beige;
@@ -88,7 +73,7 @@ form{
     width: 95%;
 }
 fieldset{
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     border: none;
     margin: 20px;
@@ -142,6 +127,7 @@ select{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+/* Botones del formulario */
 .botones{
     display: flex;
     justify-content: space-around;
@@ -154,13 +140,31 @@ select{
     border:none;
     padding: 20px;
 }
+/* Diseño del boton con enlace */
+.formulario a{
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    font-size: 2vw;
+    background: linear-gradient(45deg, rgb(217, 183, 240), rgb(255, 241, 203));
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.formulario a:hover{
+    transform: scale(1.2);
+
+}
+/* Fin del diseño de botón */
 /* Diseño de pie de pagina que copiaremos en el resto de paginas css */
 footer{
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos dentro */
-    justify-content: space-around; /* Centra los elementos horizontalmente */
+    align-items: center;
+    justify-content: space-around;
     background-color: beige;
     margin-top: 20px;
-    padding: 10px; /* Espaciado interno */
-    text-align: center; /* Asegura que el texto dentro esté centrado */
+    padding: 10px;
+    text-align: center;
 }

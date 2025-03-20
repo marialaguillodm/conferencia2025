@@ -9,7 +9,7 @@
 <body>
     <header>
         <img id="logo" src="/imagenes/logo.png" alt="Logo de la conferencia">
-        <h1>Conferencia Internacional 2025</h1>
+        <h1>Registro Conferencia Internacional 2025</h1>
         <nav>
             <a class="enlace" href="index.html">Inicio</a>
             <a id="registro">Registro</a>
@@ -29,8 +29,9 @@
                 <label for="password">Contraseña:</label>
                 <input type="password" id="password" name="password" minlength="6" placeholder="******" required>
                 <br>
+                <!-- La fecha debe ser para que tenga 18 años a fecha de la convencion 31.03.2025  -->
                 <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
-                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" max="2007-03-20" required>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" max="2007-03-31" required>
             </fieldset>    
             <fieldset class="info-contacto lila">
                 <legend>Información de Contacto</legend>
@@ -81,6 +82,7 @@
                 <label class="talleres">
                     <p>Talleres interactivos:</p>
                     <div>
+                        <!-- Añado solo lo que pone en la agenda como talleres interactivos -->
                         <p><input type="checkbox" name="talleres" value="datos-web">Protegiendo tus datos en la web</p>
                         <p><input type="checkbox" name="talleres" value="ra-educacion">Realidad aumentada en la educación</p>
                         <p><input type="checkbox" name="talleres" value="auto-sost">Automatización y sostenibilidad</p>
@@ -112,6 +114,7 @@
                 <label for="num-tarjeta">Número de la tarjeta:</label>
                 <input type="text" id="num-tarjeta"  pattern="[0-9]{16}" placeholder="XXXXXXXXXXXXXXXX" required>
                 <br>
+                <!-- No se puede añadir una tarjeta caducada (a fecha de la convención) -->
                 <label for="fecha-expiracion">Fecha de Expiración:</label>
                 <input type="month" id="fecha-expiracion" name="fecha-expiracion" min="2025-03" required>
             </fieldset>
